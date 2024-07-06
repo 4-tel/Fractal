@@ -2,7 +2,13 @@
   "contractName": "Fractal",
   "abi": [
     {
-      "inputs": [],
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_initialSupply",
+          "type": "uint256"
+        }
+      ],
       "payable": false,
       "stateMutability": "nonpayable",
       "type": "constructor"
@@ -23,21 +29,21 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/FractalFile.sol\":\"Fractal\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/FractalFile.sol\":{\"keccak256\":\"0x3132cc98b67f23b77ebad90880aaab563aa6d0dd4ca5d69b3e1db2d98e40854a\",\"urls\":[\"bzz-raw://47dab326cf17af53d0095eca1c6c0d082b4a552a04b3e005011b96033de59872\",\"dweb:/ipfs/QmYUZdC8xn8V2mQhD9LdvXiGxiZ9SRQhxym4QycrVuerAT\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50620f42406000819055506084806100286000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806318160ddd14602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b6000548156fea265627a7a72315820153c3cc9779253c4cd81c5ad37d4d1e271d5c000bee39701e6f091ca142b111364736f6c63430005100032",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806318160ddd14602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b6000548156fea265627a7a72315820153c3cc9779253c4cd81c5ad37d4d1e271d5c000bee39701e6f091ca142b111364736f6c63430005100032",
-  "sourceMap": "28:221:0:-;;;185:61;8:9:-1;5:2;;;30:1;27;20:12;5:2;185:61:0;231:7;217:11;:21;;;;28:221;;;;;;",
-  "deployedSourceMap": "28:221:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;28:221:0;;;;;;;;;;;;;;;;;;;150:26;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity ^0.5.16;\r\n\r\ncontract Fractal {\r\n    // Constructor\r\n    // Set the total number of tokens\r\n    //read the total number of tokens\r\n    uint256 public totalSupply;\r\n\r\n    constructor() public {\r\n        totalSupply = 1000000;\r\n    }\r\n}\r\n",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_initialSupply\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/FractalFile.sol\":\"Fractal\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/FractalFile.sol\":{\"keccak256\":\"0x8d91d1f00981e93f2b1c3ce802b04e482690df9b6f93d528ef07d4b909bd4328\",\"urls\":[\"bzz-raw://4697db27d7d7fe4575c178febdbf8fce8bbe4507db16b7135ebce6eab37edbee\",\"dweb:/ipfs/QmZpA9LoMiH54zERA5ux1xc9eRg6mB3fonEpbxqhTEmR7i\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516100de3803806100de8339818101604052602081101561003357600080fd5b8101908080519060200190929190505050806000819055505060848061005a6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806318160ddd14602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b6000548156fea265627a7a72315820e401dd15356170d1b9fb3be86c893d881b09f1a46ee849a5710fa3968bf2c6b964736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806318160ddd14602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b6000548156fea265627a7a72315820e401dd15356170d1b9fb3be86c893d881b09f1a46ee849a5710fa3968bf2c6b964736f6c63430005100032",
+  "sourceMap": "28:152:0:-;;;87:90;8:9:-1;5:2;;;30:1;27;20:12;5:2;87:90:0;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;87:90:0;;;;;;;;;;;;;;;;155:14;141:11;:28;;;;87:90;28:152;;;;;;",
+  "deployedSourceMap": "28:152:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;28:152:0;;;;;;;;;;;;;;;;;;;52:26;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.16;\r\n\r\ncontract Fractal {\r\n    uint256 public totalSupply;\r\n\r\n    constructor(uint256 _initialSupply) public {\r\n        totalSupply = _initialSupply;\r\n    }\r\n}\r\n",
   "sourcePath": "C:\\Users\\niewr\\Documents\\Crypto\\token_sale\\contracts\\FractalFile.sol",
   "ast": {
     "absolutePath": "project:/contracts/FractalFile.sol",
     "exportedSymbols": {
       "Fractal": [
-        12
+        14
       ]
     },
-    "id": 13,
+    "id": 15,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -57,9 +63,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 12,
+        "id": 14,
         "linearizedBaseContracts": [
-          12
+          14
         ],
         "name": "Fractal",
         "nodeType": "ContractDefinition",
@@ -69,8 +75,8 @@
             "id": 3,
             "name": "totalSupply",
             "nodeType": "VariableDeclaration",
-            "scope": 12,
-            "src": "150:26:0",
+            "scope": 14,
+            "src": "52:26:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -81,7 +87,7 @@
               "id": 2,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "150:7:0",
+              "src": "52:7:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -92,26 +98,26 @@
           },
           {
             "body": {
-              "id": 10,
+              "id": 12,
               "nodeType": "Block",
-              "src": "206:40:0",
+              "src": "130:47:0",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8,
+                    "id": 10,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 6,
+                      "id": 8,
                       "name": "totalSupply",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 3,
-                      "src": "217:11:0",
+                      "src": "141:11:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -121,72 +127,94 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "hexValue": "31303030303030",
-                      "id": 7,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": true,
-                      "kind": "number",
-                      "lValueRequested": false,
-                      "nodeType": "Literal",
-                      "src": "231:7:0",
-                      "subdenomination": null,
+                      "id": 9,
+                      "name": "_initialSupply",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5,
+                      "src": "155:14:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_1000000_by_1",
-                        "typeString": "int_const 1000000"
-                      },
-                      "value": "1000000"
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
                     },
-                    "src": "217:21:0",
+                    "src": "141:28:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 9,
+                  "id": 11,
                   "nodeType": "ExpressionStatement",
-                  "src": "217:21:0"
+                  "src": "141:28:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 11,
+            "id": 13,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4,
+              "id": 6,
               "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "196:2:0"
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5,
+                  "name": "_initialSupply",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13,
+                  "src": "99:22:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "99:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "98:24:0"
             },
             "returnParameters": {
-              "id": 5,
+              "id": 7,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "206:0:0"
+              "src": "130:0:0"
             },
-            "scope": 12,
-            "src": "185:61:0",
+            "scope": 14,
+            "src": "87:90:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 13,
-        "src": "28:221:0"
+        "scope": 15,
+        "src": "28:152:0"
       }
     ],
-    "src": "0:251:0"
+    "src": "0:182:0"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "project:/contracts/FractalFile.sol",
       "exportedSymbols": {
         "Fractal": [
-          12
+          14
         ]
       }
     },
@@ -216,17 +244,17 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            12
+            14
           ],
           "name": "Fractal",
-          "scope": 13
+          "scope": 15
         },
         "children": [
           {
             "attributes": {
               "constant": false,
               "name": "totalSupply",
-              "scope": 12,
+              "scope": 14,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint256",
@@ -241,12 +269,12 @@
                 },
                 "id": 2,
                 "name": "ElementaryTypeName",
-                "src": "150:7:0"
+                "src": "52:7:0"
               }
             ],
             "id": 3,
             "name": "VariableDeclaration",
-            "src": "150:26:0"
+            "src": "52:26:0"
           },
           {
             "attributes": {
@@ -258,22 +286,44 @@
                 null
               ],
               "name": "",
-              "scope": 12,
+              "scope": 14,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
             },
             "children": [
               {
-                "attributes": {
-                  "parameters": [
-                    null
-                  ]
-                },
-                "children": [],
-                "id": 4,
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_initialSupply",
+                      "scope": 13,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 4,
+                        "name": "ElementaryTypeName",
+                        "src": "99:7:0"
+                      }
+                    ],
+                    "id": 5,
+                    "name": "VariableDeclaration",
+                    "src": "99:22:0"
+                  }
+                ],
+                "id": 6,
                 "name": "ParameterList",
-                "src": "196:2:0"
+                "src": "98:24:0"
               },
               {
                 "attributes": {
@@ -282,9 +332,9 @@
                   ]
                 },
                 "children": [],
-                "id": 5,
+                "id": 7,
                 "name": "ParameterList",
-                "src": "206:0:0"
+                "src": "130:0:0"
               },
               {
                 "children": [
@@ -311,56 +361,53 @@
                               "type": "uint256",
                               "value": "totalSupply"
                             },
-                            "id": 6,
+                            "id": 8,
                             "name": "Identifier",
-                            "src": "217:11:0"
+                            "src": "141:11:0"
                           },
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "hexvalue": "31303030303030",
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": true,
-                              "lValueRequested": false,
-                              "subdenomination": null,
-                              "token": "number",
-                              "type": "int_const 1000000",
-                              "value": "1000000"
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 5,
+                              "type": "uint256",
+                              "value": "_initialSupply"
                             },
-                            "id": 7,
-                            "name": "Literal",
-                            "src": "231:7:0"
+                            "id": 9,
+                            "name": "Identifier",
+                            "src": "155:14:0"
                           }
                         ],
-                        "id": 8,
+                        "id": 10,
                         "name": "Assignment",
-                        "src": "217:21:0"
+                        "src": "141:28:0"
                       }
                     ],
-                    "id": 9,
+                    "id": 11,
                     "name": "ExpressionStatement",
-                    "src": "217:21:0"
+                    "src": "141:28:0"
                   }
                 ],
-                "id": 10,
+                "id": 12,
                 "name": "Block",
-                "src": "206:40:0"
+                "src": "130:47:0"
               }
             ],
-            "id": 11,
+            "id": 13,
             "name": "FunctionDefinition",
-            "src": "185:61:0"
+            "src": "87:90:0"
           }
         ],
-        "id": 12,
+        "id": 14,
         "name": "ContractDefinition",
-        "src": "28:221:0"
+        "src": "28:152:0"
       }
     ],
-    "id": 13,
+    "id": 15,
     "name": "SourceUnit",
-    "src": "0:251:0"
+    "src": "0:182:0"
   },
   "compiler": {
     "name": "solc",
@@ -370,12 +417,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x4F0847c657B3398c6E3799eB3FE37D2ADb045679",
-      "transactionHash": "0x35560a76706d69848af8549553dc852c8b8cd189b2816c11487706ad7270f749"
+      "address": "0x86CA7e298cA01080FEE61eD3BDaF0e6bb56c03C9",
+      "transactionHash": "0x924eeb056a88c07d9212157b0f9827fa1b8f702a723b74da27b31210a6d7046b"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-07-02T15:54:19.740Z",
+  "updatedAt": "2024-07-04T09:35:41.286Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
