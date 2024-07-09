@@ -1,0 +1,651 @@
+{
+  "contractName": "FractalSale",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract Fractal",
+          "name": "_tokenContract",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "tokenContract",
+      "outputs": [
+        {
+          "internalType": "contract Fractal",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract Fractal\",\"name\":\"_tokenContract\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokenContract\",\"outputs\":[{\"internalType\":\"contract Fractal\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/FractalSaleFile.sol\":\"FractalSale\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/FractalFile.sol\":{\"keccak256\":\"0x7822970a133be258b432bee867cc0d0b2dcf2095a9e2cdd00371aea8278d057e\",\"urls\":[\"bzz-raw://cc79c06df9fc934be3cc624129cfdd98b16b3b106ee2c5686607ed63485583a2\",\"dweb:/ipfs/QmWdx4HZoxM1UAq5HtkfQwck8tbYqbryYZ12zgj4MMq6tb\"]},\"project:/contracts/FractalSaleFile.sol\":{\"keccak256\":\"0x507ce522a4085a7fc77a4baad443484a4a72cf3f317d36fafacfc9ddbbd41e4f\",\"urls\":[\"bzz-raw://8b0f677a0a55ee5576277aa0be408b4714566b6d76b2495f5c862589d6527862\",\"dweb:/ipfs/Qmbmi1TEQN3WmSeaoHSSyQeknbdhLuMfaTUm28mREPTX6Q\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516101a43803806101a48339818101604052602081101561003357600080fd5b8101908080519060200190929190505050336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555080600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505060d0806100d46000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806355a373d614602d575b600080fd5b60336075565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a72315820691a08bff37e5cfa20cd01115eab6c9a28a9ad71ee13d742313900ce133c25a164736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806355a373d614602d575b600080fd5b60336075565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a72315820691a08bff37e5cfa20cd01115eab6c9a28a9ad71ee13d742313900ce133c25a164736f6c63430005100032",
+  "sourceMap": "59:258:1:-;;;144:170;8:9:-1;5:2;;;30:1;27;20:12;5:2;144:170:1;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;144:170:1;;;;;;;;;;;;;;;;206:10;198:5;;:18;;;;;;;;;;;;;;;;;;243:14;227:13;;:30;;;;;;;;;;;;;;;;;;144:170;59:258;;;;;;",
+  "deployedSourceMap": "59:258:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:258:1;;;;;;;;;;;;;;;;;;;107:28;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.16;\r\n\r\nimport \"./FractalFile.sol\";\r\n\r\ncontract FractalSale {\r\n    address admin;\r\n    Fractal public tokenContract;\r\n\r\n    constructor(Fractal _tokenContract) public {\r\n        admin = msg.sender;\r\n        tokenContract = _tokenContract;\r\n        //Token Contract\r\n        //Token Price\r\n    }\r\n}\r\n",
+  "sourcePath": "C:\\Users\\niewr\\Documents\\Crypto\\token_sale\\contracts\\FractalSaleFile.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/FractalSaleFile.sol",
+    "exportedSymbols": {
+      "FractalSale": [
+        208
+      ]
+    },
+    "id": 209,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 187,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "absolutePath": "project:/contracts/FractalFile.sol",
+        "file": "./FractalFile.sol",
+        "id": 188,
+        "nodeType": "ImportDirective",
+        "scope": 209,
+        "sourceUnit": 186,
+        "src": "28:27:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 208,
+        "linearizedBaseContracts": [
+          208
+        ],
+        "name": "FractalSale",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 190,
+            "name": "admin",
+            "nodeType": "VariableDeclaration",
+            "scope": 208,
+            "src": "87:13:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 189,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "87:7:1",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 192,
+            "name": "tokenContract",
+            "nodeType": "VariableDeclaration",
+            "scope": 208,
+            "src": "107:28:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Fractal_$185",
+              "typeString": "contract Fractal"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 191,
+              "name": "Fractal",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 185,
+              "src": "107:7:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Fractal_$185",
+                "typeString": "contract Fractal"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 206,
+              "nodeType": "Block",
+              "src": "187:127:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 200,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 197,
+                      "name": "admin",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 190,
+                      "src": "198:5:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 198,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 223,
+                        "src": "206:3:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 199,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "206:10:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "198:18:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 201,
+                  "nodeType": "ExpressionStatement",
+                  "src": "198:18:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 204,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 202,
+                      "name": "tokenContract",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 192,
+                      "src": "227:13:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Fractal_$185",
+                        "typeString": "contract Fractal"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 203,
+                      "name": "_tokenContract",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 194,
+                      "src": "243:14:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Fractal_$185",
+                        "typeString": "contract Fractal"
+                      }
+                    },
+                    "src": "227:30:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Fractal_$185",
+                      "typeString": "contract Fractal"
+                    }
+                  },
+                  "id": 205,
+                  "nodeType": "ExpressionStatement",
+                  "src": "227:30:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 207,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 195,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 194,
+                  "name": "_tokenContract",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 207,
+                  "src": "156:22:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_Fractal_$185",
+                    "typeString": "contract Fractal"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 193,
+                    "name": "Fractal",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 185,
+                    "src": "156:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Fractal_$185",
+                      "typeString": "contract Fractal"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "155:24:1"
+            },
+            "returnParameters": {
+              "id": 196,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "187:0:1"
+            },
+            "scope": 208,
+            "src": "144:170:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 209,
+        "src": "59:258:1"
+      }
+    ],
+    "src": "0:319:1"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/FractalSaleFile.sol",
+      "exportedSymbols": {
+        "FractalSale": [
+          208
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.5",
+            ".16"
+          ]
+        },
+        "id": 187,
+        "name": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 186,
+          "absolutePath": "project:/contracts/FractalFile.sol",
+          "file": "./FractalFile.sol",
+          "scope": 209,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 188,
+        "name": "ImportDirective",
+        "src": "28:27:1"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            208
+          ],
+          "name": "FractalSale",
+          "scope": 209
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "admin",
+              "scope": 208,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "nonpayable",
+                  "type": "address"
+                },
+                "id": 189,
+                "name": "ElementaryTypeName",
+                "src": "87:7:1"
+              }
+            ],
+            "id": 190,
+            "name": "VariableDeclaration",
+            "src": "87:13:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "tokenContract",
+              "scope": 208,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "contract Fractal",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "Fractal",
+                  "referencedDeclaration": 185,
+                  "type": "contract Fractal"
+                },
+                "id": 191,
+                "name": "UserDefinedTypeName",
+                "src": "107:7:1"
+              }
+            ],
+            "id": 192,
+            "name": "VariableDeclaration",
+            "src": "107:28:1"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "scope": 208,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_tokenContract",
+                      "scope": 207,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract Fractal",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "Fractal",
+                          "referencedDeclaration": 185,
+                          "type": "contract Fractal"
+                        },
+                        "id": 193,
+                        "name": "UserDefinedTypeName",
+                        "src": "156:7:1"
+                      }
+                    ],
+                    "id": 194,
+                    "name": "VariableDeclaration",
+                    "src": "156:22:1"
+                  }
+                ],
+                "id": 195,
+                "name": "ParameterList",
+                "src": "155:24:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 196,
+                "name": "ParameterList",
+                "src": "187:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "address"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 190,
+                              "type": "address",
+                              "value": "admin"
+                            },
+                            "id": 197,
+                            "name": "Identifier",
+                            "src": "198:5:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "sender",
+                              "referencedDeclaration": null,
+                              "type": "address payable"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 223,
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 198,
+                                "name": "Identifier",
+                                "src": "206:3:1"
+                              }
+                            ],
+                            "id": 199,
+                            "name": "MemberAccess",
+                            "src": "206:10:1"
+                          }
+                        ],
+                        "id": 200,
+                        "name": "Assignment",
+                        "src": "198:18:1"
+                      }
+                    ],
+                    "id": 201,
+                    "name": "ExpressionStatement",
+                    "src": "198:18:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "contract Fractal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 192,
+                              "type": "contract Fractal",
+                              "value": "tokenContract"
+                            },
+                            "id": 202,
+                            "name": "Identifier",
+                            "src": "227:13:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 194,
+                              "type": "contract Fractal",
+                              "value": "_tokenContract"
+                            },
+                            "id": 203,
+                            "name": "Identifier",
+                            "src": "243:14:1"
+                          }
+                        ],
+                        "id": 204,
+                        "name": "Assignment",
+                        "src": "227:30:1"
+                      }
+                    ],
+                    "id": 205,
+                    "name": "ExpressionStatement",
+                    "src": "227:30:1"
+                  }
+                ],
+                "id": 206,
+                "name": "Block",
+                "src": "187:127:1"
+              }
+            ],
+            "id": 207,
+            "name": "FunctionDefinition",
+            "src": "144:170:1"
+          }
+        ],
+        "id": 208,
+        "name": "ContractDefinition",
+        "src": "59:258:1"
+      }
+    ],
+    "id": 209,
+    "name": "SourceUnit",
+    "src": "0:319:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x75F1A50483b4da677DDec158f2491e0F47D7319A",
+      "transactionHash": "0x7fba16437f36ff4461c0ecdf97addf50af399a7c79c1cee654582ad65db8ffde"
+    }
+  },
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2024-07-08T08:01:27.740Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
